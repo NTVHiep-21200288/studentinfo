@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NHẬP THÔNG TIN SINH VIÊN"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Họ và tên:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập họ và tên"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MSSV:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextStudentID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập mã số sinh viên"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lớp:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập lớp"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sinh viên năm:"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonYear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Năm 1"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioButtonYear2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Năm 2" />
+
+            <RadioButton
+                android:id="@+id/radioButtonYear3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Năm 3" />
+
+            <RadioButton
+                android:id="@+id/radioButtonYear4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Năm 4" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chuyên ngành:"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupMajor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+
+            <RadioButton
+                android:id="@+id/radioButtonMajor3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Máy tính - HTN" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMajor4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Điện tử" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMajor5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Viễn thông" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kế hoạch phát triển bản thân:"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/editTextPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập kế hoạch phát triển bản thân"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:gravity="top|start"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gửi thông tin" />
+
+    </LinearLayout>
+</ScrollView>
